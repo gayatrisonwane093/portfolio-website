@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>protfoio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="jquery.lineProgressbar.css" rel="stylesheet">
+    <link rel="stylesheet" href="progressbar/jquery.lineProgressbar.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="style.css">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            height: 100vh;
+            overflow: hidden;
+        }
+        .box:hover{
+            overflow-y:scroll ;
+        }
+        .img{
+            width:170px;
+            height: 170px;
+            margin-left: 17%;
+            border-radius: 50%;  
+            box-shadow: 0 4px 8px 0 rgba(228, 189, 189, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.10); 
+        }
+        
+        .nav-link{
+            font-size: 17px;
+            margin-left: 37px;
+            opacity: 0.8;  
+            font-weight: 600;
+            color: white;   
+        }
+        .nav-link:hover{
+            color: red;
+        }
+        .mini_cart{
+             width: 64%;
+             height: 44px;
+             border-radius: 10px;
+             box-shadow: 10px 10px 5px ;
+             background: linear-gradient(to right bottom, #212428, #16181c);
+             box-shadow: var(--shadow-1);
+        }
+        .h4{
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            opacity: 0.8;
+        }
+        .circle{
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            background: linear-gradient(to right bottom, #212428, #16181c);    
+        }
+        /*saider*/
+        .heading{
+            color: white;
+            opacity: 0.8;
+            font-size: 50px;
+            font-weight: 700;
+        }
+        .conten1{
+            position: relative;
+        }
+        .conten{
+            margin-left: 24%;
+            margin-top: 120px;  
+            position: absolute;     
+        }
+        .img-circle{
+            width: 230px;
+            height: 230px;
+            margin-left: 25%;
+            border-radius: 50%;    
+            animation-name: img-circle;
+            animation-duration: 4s ;
+            animation-iteration-count: infinite;
+        }
+        .logoimg{
+            border-radius: 50%;
+            width: 93%;
+            height: 93%;
+            margin-left: 8px;
+            margin-top: 8px;
+        }
+        @keyframes img-circle {
+            0%   {background-color:#ff014f; }
+            20%  {background-color: #f79533; }
+            25%  {background-color:#f37055; }
+            40%  {background-color:#ef4e7b; }
+            50% {background-color:#a166ab; }
+            60% {background-color:#0573b8; }
+            70% {background-color:#1098ad; }
+            90% {background-color:#07d39d; }
+            100% {background-color:#6fba82; }
+            
+        }
+        .particl{
+            color: #ff014f;
+            font-size: 35px;
+            margin-left: 55px;
+        }
+        .btn1{
+            background: linear-gradient(to right bottom, #212428, #16181c);
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 8px;
+            margin-left: 29%;
+            margin-top: 2%;
+            border: none;
+            color:#ff014f;
+            padding: 15px 35px; 
+            box-shadow: var(--shadow-1);
+        }
+        .btn1:hover{
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1);
+        }
+        .p{
+            color: #ff014f;
+            font-weight: 700;
+            font-size: 16px;
+            text-align: center; 
+            padding-top: 90px;
+        }
+        .h2{
+            font-size: 64px;
+            font-weight: 700;
+            font-family: var(--font-secondary);
+            color: #c4cfde;
+            text-align: center;
+        }
+        
+        b{
+            color: white;
+            opacity: 0.8;
+        }
+        .header{
+            border-bottom: 1px solid #121415;
+            padding-bottom: 60px;
+        }
+        .box2{
+            border-bottom: 1px solid #121415;
+            padding-bottom: 90px;
+        }
+        .flex{
+            display:flex;
+            box-shadow: var(--shadow-1);
+        }
+        .lorem{
+            border-radius: 10px;
+            background: linear-gradient(to right bottom, #212428, #16181c);
+            color: #c4cfde;
+            margin: 10px;
+            padding: 22px;
+            opacity: 0.8;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .bg{
+            border-radius: 10px;
+            background: linear-gradient(to right bottom, #212428, #16181c);
+            color: #c4cfde;
+            padding: 22px;
+            opacity: 0.8; 
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .bg:hover{
+            background: black;
+        }
+        .h4{
+            width: 300px;
+            font-size: 23px;
+            font-weight: 600;
+        }
+        .h4:hover{
+            color: #ff014f;
+        }
+        .ico{
+            font-size: 18px;
+            color: #c4cfde;
+        }
+        .ico:hover{
+            color: #ff014f;
+        }
+        .likesym:hover{
+            background-color: #121415;
+            border-radius: 8px;
+            width: 20%;
+            padding: 5px;
+        }
+        .maindemo{
+            overflow: hidden;
+            height: 100vh;
+        }
+        .maindemo:hover{
+            overflow-y: scroll;
+        }
+        .imgtrans1{
+            transition: transform .2s;
+            padding: 0px 10px;
+           
+        }
+        .imgtrans1:hover{
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1); 
+        }
+        .plan-box{
+            color: #878E99;
+            font-family: var(--font-primary);
+            background: linear-gradient(to right bottom, #212428, #16181c);
+            padding: 20px;
+            text-align: center; 
+            border-radius: 12px;
+            margin-top: 40px;
+        }
+        .plan-box:hover{
+            background: black;
+        }
+        .h6{
+            font-size: 28px;
+            color: #b2c3d9;
+            font-family: var(--font-primary);
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+        .h6:hover{
+            color: #ff014f;
+        }
+        .year{
+            color: #f9004d;
+            font-weight: 700;
+            font-family: poppins,sans-serif;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+        .Education-text{
+            color: #cacfde;
+            font-size: 45px;
+            font-weight: 600;
+            font-family: montserrat,sans-serif;
+        }
+        .title-box{
+            background:linear-gradient(to right bottom, #212428, #16181c);  
+            border-radius: 14px;   
+        }
+        .title-box:hover{
+            background: black;
+        }
+        .heading0{
+            color: #cacfde;   
+            font-weight: 600;
+            font-size: 26px;
+            font-family: var(--font-primary);
+            font-family:poppins,sans-serif;
+        } 
+        .head{
+            color: #878E99;   
+            font-size: 17px;
+            padding-bottom: 60px;
+            border-bottom: 1px solid #121415;
+        }
+        .pera{
+            color: #cacfde;   
+            width: 69%;
+            font-size: 21px;
+            line-height: 28px;
+            opacity: 0.7;
+        }
+        .skil{
+            padding-bottom: 55px;
+            border-bottom: 1px solid #121415;
+        }
+        .nev{
+            color: #e4e6ea;
+            font-size: 29px;
+            font-family: montserrat,sans-serif;
+            font-weight: 600;
+        }
+        .plan-box1{
+            color: #878E99;
+            font-family:poppins,sans-serif;
+            background-color: #212428;
+            background: linear-gradient(to right bottom, #212428, #16181c);
+            padding: 20px; 
+            border-radius: 12px;
+            margin-top: 40px;
+        }
+        .preg{
+            width: 260px;
+            font-size: 20px;
+            color: #878E99;
+            font-family: poppins,sans-serif;   
+        }
+        .span{
+            font-size: 17px;
+        }
+        .link1{
+            text-decoration: none;
+            color: #c4cfde;
+        }
+        .link1:hover{
+            color: #f9004d;
+            border-bottom: 1px solid #f9004d;
+        }
+        .ronded-box{
+            box-shadow: 0 4px 8px 0 rgba(39, 33, 33, 0.2), 0 6px 20px 0 rgba(59, 59, 59, 0.19);
+            background: linear-gradient(to right bottom, #212428, #16181c);
+            width: 70px;
+            height: 60px;   
+            margin-top: 10%;
+        }
+        .plan-box2{ 
+            color: #878E99;
+            font-family:poppins,sans-serif;
+            background: linear-gradient(to right bottom, #202327, #16181c);
+            border-radius: 15px;
+            margin-left: 10px;   
+            width: 100%;
+        }
+        label{
+            color:#a0a8b3;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            padding: 10px;
+        }
+        .input{
+            color: white;
+            width: 100%;
+            background-color:  #191b1e;
+            border-radius: 8px;
+            border: 5px solid #15171a;
+            padding: 10px;
+            box-shadow: var(--inner-shadow);    
+        }
+        input:hover{
+            border: 2px solid #ff014f;
+        }
+        textarea{
+            width: 100%;
+            height: 200px;
+            background-color: #16181c;
+            border: 5px solid #191b1e;
+            border-radius: 5px;
+        }
+        textarea:hover{
+            border: 2px solid #ff014f;
+        }
+        .btn3{
+            width: 100%;
+            background: #191b1e;
+            background: linear-gradient(145deg, #1e2024, #23272b);
+            box-shadow: var(--shadow-1);
+            font-family: sans-serif;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            color: #c4cfde;
+            padding: 15px;
+        }
+        .btn3:hover{
+            border: 2px solid #ff014f;
+        }
+        .sp:hover{
+            color: #f9004d;
+            border-bottom: 1px solid #f9004d; 
+        }
+       
+        .pre-conten{
+            font-size: 18px; 
+            letter-spacing: 1px;
+        }
+        .pre-conten:hover{
+            color: white;  
+        }
+        .hover:hover{
+            color: white;
+        }
+        .round{
+            background: linear-gradient(to right bottom, #212428, #16181c);
+            box-shadow:3px 1px 3px 2px #393737;   
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            margin: auto;
+        }
+       @media  screen and (max-width: 480px){
+        .box{
+            display: none;
+        }
+          .flex{
+            display: block;
+          }
+          .heading{
+            font-size: 18px;
+            margin-left: -5px;
+          }
+          .conten{
+            margin-left: 8%;
+            margin-top: -30px;
+          }
+          .particl{
+            font-size: 16px;
+            margin-left: 15px;
+            padding-top: 10px;
+          }
+          .header{
+            padding-top: 20px;
+            padding-bottom: 130px;
+          }
+          .img-circle{
+            width: 180px;
+            height: 180px;
+            margin-top: 30px;
+            margin-left: -1%;
+          }
+          .logoimg{ 
+            margin-left: 10px;
+            margin-top: 10px;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;  
+          }
+          .btn1{
+            margin-left: -1px;
+            margin-top: 20px;
+          }
+          .imgtrans{
+            width: 100%;
+          }
+          .text{
+            font-size: 13px;
+            margin-left: -15px;
+            
+          }
+          b{
+            font-size: 20px;
+          }
+          .bg{
+            margin-left: 20px;
+          }
+          .h2{
+            font-size: 35px;
+          }
+          .Education-text{
+            font-size: 38px;
+          }
+          .plan-box2{
+            margin-left: 0px;
+          }
+     }
+        
+     
+        
+    </style>
+   
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="jquery.lineProgressbar.js"></script>
+    
+       
+     <script src="protfolio_img/progresbar/jquery.lineProgressbar.js"></script>
+    <!---- <script src="protfolio_img/progresbar/LineProgressbar.jquery.json"></script>-->
+    
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-firefly@2/tsparticles.preset.firefly.bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+<body style="background-color: black;">
+    <div class="container-fluid">
+        <div class="row" style="height: 100vh;">
+            <div class="col-sm-3 ps-5 pt-4 box bg-dark">
+                <div >
+                    <img class="img mt-5" src="protfolio_img/gayatri.jfif">
+                </div>          
+                <nav class="navbar">
+                    <ul>
+                        <li class="nav-item pt-4">  
+                            <a class="nav-link" style="color: red;"  href="#home"><span class="material-symbols-outlined me-3 ">home</span>HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link lcolor: white pt-3" href="#Feature"><span class="material-symbols-outlined me-3">featured_play_list</span> FEATURES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link lcolor: white pt-3" href="#Portfolio"><span class="material-symbols-outlined me-3">home</span>PORTFOLIO</a>
+                          </li>
+                        <li class="nav-item">
+                          <a class="nav-link lcolor: white pt-3" href="#Resume"><span class="material-symbols-outlined me-3">group</span>RESUME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link lcolor: white pt-3" href="#Technical"><span class="material-symbols-outlined me-3">person</span>CLIENTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link lcolor: white  pt-3" href="#"><span class="material-symbols-outlined me-3">shopping_cart</span>PRICING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link lcolor: white pt-3" href="#"><span class="material-symbols-outlined me-3">code_blocks</span>BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link lcolor: white pt-3" href="#contact"><span class="material-symbols-outlined me-3">contact_phone</span>CONTACTS</a>
+                        </li>
+                    </ul>
+                </nav>  
+                <div class="mini_cart shadow ms-4 mt-4">
+                    <img class="ms-4 mt-2" src="protfolio_img/shopping-cart-.png"width="12%">
+                    <img style="margin-left: 80px;" class="mt-" src="protfolio_img/circled-01.png"width="14%">
+                </div>
+                <hr style="color: white; width:70%; margin-top: 40px; margin-left: 40px;">
+                     <h4 class="h4 ms-4 mt-4">FIND WITH ME</h4>
+                <div class="circle ms-4 mt-4">
+                    <img class="imgtrans  ms-2 mt-3" src="protfolio_img/facebook-50 (2).png"height="23px">
+                </div>
+                <div class="circle" style="margin-top: -50px; margin-left: 40%;">
+                    <img class="imgtrans ms-2 mt-3 ms-1" src="protfolio_img/instagram-50.png"height="23px">
+                </div>
+                <div class="circle" style="margin-top: -50px; margin-left: 63%;">
+                    <img class="imgtrans ms-2 mt-3 ms-1" src="protfolio_img/twitter-24.png"height="23px">
+                </div>
+            </div>
+        
+        <!----------slideer--------------------->
+            <div class="col ms-1 bg-dark maindemo">
+                <div class="header" id="home">
+                    <div class="conten1" id="particles-js" style="padding-bottom: 90px;">
+                        <div class="conten">
+                            <div class="img-circle">
+                                <img class="logoimg" src="protfolio_img/gayatri.jfif">
+                            </div>
+                            <h1 class="heading pt-5 ">Hi, I’m Gayatri Sonwane</h1>
+                            <span class="particl" id="demo01"></span><br> 
+                            <button class="btn1">CONTACT ME</button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="box2" id="Feature">
+                    <p class="p">FEATURES</p>
+                    <h2 class="h2">What I Do</h2>
+                    <div class="flex mt-3" >
+                       
+                        <div class="lorem shadow-lg" style="text-align: center;">
+                            <div class="round">
+                                <img class="pt-3" src="protfolio_img/menu-50.png"width="50px">
+                            </div>
+                            <h4 class="heading0 ps-2 pt-4">Designer</h4>
+                            <p class="pre-conten  pt-4 pb-4">I value simple content structure, clean design patterns, and thoughtful interactions.</p>
+                
+                        </div>
+                        <div class="lorem" style="text-align: center;">
+                            <div class="round">
+                                <img class="pt-3" src="protfolio_img/right-button-64.png"width="58px">
+                            </div>
+                            <h4 class="heading0 ps-2 pt-4">Frontend Developer</h4>
+                            <p class="pre-conten  pt-4 pb-4">I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+                        </div>
+                        <div class="lorem" style="text-align: center;">
+                            <div class="round">
+                                <img class="pt-3" src="protfolio_img/book-48.png"width="70px">
+                            </div>
+                            <h4 class="heading0 ps-2 pt-4">Mentor</h4>
+                            <p class="pre-conten  pt-4 pb-4">I genuinely care about people, and love helping fellow designers work on their craft.
+
+                            </p>
+                        </div>
+                    </div>    
+                </div>
+                <div id="Portfolio" >
+                    <p class="p">VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</p>
+                    <h2 class="h2">My Portfolio</h2>
+                    <div class="row pt-5" style="cursor: pointer; padding-bottom: 60px; width: 100%;">
+                        <div class="col-sm-4 bg" >
+                            <figure>
+                                <img class="rounded-4 mt-3 imgtrans1" src="protfolio_img/Screenshot 2023.png"width="300px"height="200">
+                                <figcaption>
+                                    <div class="likesym ms-2 mt-2"><span class="material-symbols-outlined ico ">favorite</span>99</div><br>
+                                    <h4 class="h4 text">Burhanpur Diary. We are a local digital guide for you.</h4>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-4 bg">
+                            <figure>
+                                <img class="rounded-4  mt-3 imgtrans1" src="protfolio_img/Screenshot25.png"width="300px"height="200">
+                                <figcaption>
+                                    <div class="likesym ms-2 mt-2"><span class="material-symbols-outlined ico ">favorite</span>105</div><br>
+                                    <h4 class="h4 text">Live streaming solutions you can count on.</h4>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-4 bg">
+                            <figure>
+                                <img class="rounded-4  mt-3 imgtrans1" src="protfolio_img/spotifyscreen.png"width="300px"height="200">
+                                <figcaption>
+                                    <div class="likesym ms-2 mt-2"><span class="material-symbols-outlined ico ">favorite</span>78</div><br>
+                                    <h4 class="h4 text">Laughter. Tears. Thrills. Find it all on Netflix.</h4>  
+                                </figcaption>
+                            </figure>
+                        </div>   
+                    </div>
+                    <div class="row pt-5" style="cursor: pointer; border-bottom: 1px solid black; padding-bottom: 160px; width: 100%;">
+                        <div class="col-sm-4 bg">
+                            <figure>
+                                <img class="rounded-4 mt-3 imgtrans1" src="protfolio_img/netflixscren.png"width="300px"height="200">
+                                <figcaption>
+                                    <div class="likesym ms-2 mt-2"><span class="material-symbols-outlined ico ">favorite</span>99</div><br>
+                                    <h4 class="h4 text">Laughter. Tears. Thrills. Find it all on Netflix.</h4>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-4 bg">
+                            <figure>
+                                <img class="rounded-4  mt-3 imgtrans1" src="protfolio_img/Screenshot 23.png"width="300px"height="200">
+                                <figcaption>
+                                    <div class="likesym ms-2 mt-2"><span class="material-symbols-outlined ico ">favorite</span>105</div><br>
+                                    <h4 class="h4 text">India's Most-loved Payments App</h4>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-4 bg">
+                            <figure>
+                                <img class="rounded-4  mt-3 imgtrans1" src="protfolio_img/weatherscren.png"width="300px"height="200">
+                                <figcaption>
+                                    <div class="likesym ms-2 mt-2"><span class="material-symbols-outlined ico ">favorite</span>78</div><br>
+                                    <h4 class="h4 text">Weather forecasts, nowcasts and history in a fast and elegant way                                    </h4>  
+                                </figcaption>
+                            </figure>
+                        </div>   
+                    </div>
+                </div>
+                <!------------resume--------->
+                <div class="row shadow-lg" id="Resume">
+                    <h2 class="h2 pt-5">My Resume</h2>
+                    <div class="col-sm-6 plan-box">
+                        <button onclick="openCity('London')" style="background: linear-gradient(to right bottom, #212428, #16181c); border: none;"><h6 class="h6" style="color: #ff014f;">Education</h6></button>
+                    </div>
+                    <div class="col-sm-6 plan-box">
+                        <button onclick="openCity('Paris')" style="background: linear-gradient(to right bottom, #212428, #16181c); border: none;"><h6 class="h6">Professional Skills</h6></button>
+                    </div> 
+                    <!----education content---->
+                        <div id="London" class="w3-container w3-display-container city">
+                            <h6 class="year mt-5 ms-5">2019-2020</h6>
+                            <h4 class="Education-text mt-2 ms-5">Education Quality</h4>
+                            <span onclick="this.parentElement.style.display='none'"
+                            class="w3-button w3-large w3-display-topright">&times;</span>
+                            <div class="row" style="padding: 50px;">
+                                <div class="col title-box">
+                                    <h4 class="heading0 ms-5 mt-5">BCA in Computer<br> Science</h4>
+                                    <p class="head ms-5 me-5">University of DAV (Running)</p>
+                                    <p class="pera ms-5 mb-5">The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture.</p>
+                                </div>
+                           
+                                <div class="col title-box">
+                                    <div class="title-box  text-light">
+                                        <h4 class="heading0 ms-5 mt-5">Secondary School Education</h4>
+                                        <p class="head ms-5 me-5">Modern Higher Secondary School (2020 - 2021)</p>
+                                        <p class="pera ms-5 mb-5">Secondary education or post-primary education covers two phases on the international standard classification of Education scale.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!--------skils content------>
+                        <div id="Paris" class="w3-container w3-display-container city" style="display:none">
+                            <h6 class="year mt-5 ms-3">Features</h6>
+                            <h4 class="Education-text mt-2 ms-3">Development Skill</h4>
+                            <span onclick="this.parentElement.style.display='none'"class="w3-button w3-large w3-display-topright">&times;</span> 
+                            <div class="skilag text-light" style="font-size: 19px; padding: 50px;">
+                                <h6>HTML</h6>
+                                <div id="jq"></div>
+                                <h6>CSS</h6>
+                                <div id="jq1"></div>
+                                <h6>JAVASCRIPT</h6>
+                                <div id="jq2"></div>
+                                <h6>RECAT</h6>
+                                <div id="jq3"></div>
+                            </div>         
+                        </div>
+                </div>
+                <!---Technical Skills---->
+               <div class="skil" id="Technical" style="padding: 50px;">
+                    <h6 class="Education-text mt-5 ms-4">Technical Skills</h6>
+                    <div class="plan-box">
+                        <h5 style="font-size: 19px;">C & C++</h5>
+                    </div>
+                    <div class="plan-box mt-0">
+                        <h5 style="font-size: 19px;">HTML to React</h5>
+                    </div>
+                    <div class="plan-box mt-0">
+                        <h5 style="font-size: 19px;">Java</h5>
+                    </div>
+                    <div class="plan-box mt-0">
+                        <h5 style="font-size: 19px;">WordPress</h5>
+                    </div>   
+                </div>
+            <!----------footer------>
+                <div id="contact" class="row ms-1" style="padding-bottom: 60px;  border-bottom: 1px solid #121415;"> 
+                    <p class="p">CONTACT</p>
+                    <h2  class="h2">Contact With Me</h2>
+                    <div class="col-sm-4 plan-box1">
+                        <div>
+                            <img class="rounded-3" src="protfolio_img/contact.png"width="100%">
+                        </div>
+                        <h4 class="nev mt-4">Nevine Acotanza</h4>
+                        <p class="preg">Chief Operating Officer</p>
+                        <p class="preg">I am available for freelance work. Connect with me via and call in to my account.</p>
+                        <span class="span">Phone: <a href="#" class="link1">+9162******90</a></span><br>
+                        <span class="span">Email: <a href="#" class="link1">gayatrisonwane093@gmail.com</a></span>
+                        <p class="span pt-4">FIND WITH ME</p>
+
+                        <div class="ronded-box rounded-2">
+                            <img class="ms-2 mt-3 imgtrans1" src="protfolio_img/twitter-24.png"width="70%">
+                        </div>
+                        <div class="ronded-box rounded-2 " style="margin-left: 100px; margin-top: -60px;">
+                            <img class="ms-2 mt-3 imgtrans1" src="protfolio_img/facebook-50 (2).png"width="70%">
+                        </div>
+                        <div class="ronded-box rounded-2 " style="margin-left: 200px; margin-top: -60px;">
+                            <img class="ms-2 mt-3 imgtrans1" src="protfolio_img/instagram-50.png"width="70%">
+                        </div>
+                    </div>
+                    <div class="col plan-box2 mt-5 pb-5" style="padding: 50px;">
+                        <div class="row">
+                            <div class="col pt-4">
+                                <label>YOUR NAME</label><br>
+                                <input class="input mt-3" type="text" name="name">
+                            </div>
+                            <div class="col  pt-4">
+                                <label>PHONE NUMBER</label><br>
+                                <input class="input mt-3" type="text">
+                            </div>
+                        </div><br>
+                        <label class="mt-1" >EMAIL</label><br>
+                        <input class="input mt-2" type="email" >
+                        <label class="mt-3">SUBJECT</label><br>
+                        <input  class="input mt-2"  type="text">
+                        <label class="mt-3" >YOUR MESSAGE</label><br>
+                        <textarea class="mt-3"></textarea><br>
+                        <button class="btn3 mt-3 shadow-lg">SEND MESSAGE</button>
+                    </div>
+                </div>
+                <div class="footer pb-5" style="text-align: center; padding-top: 90px;">
+                    <a style=" color: #878e99; font-size: 17px;" href="#">© 2023. All rights reserved by <span class="sp" style="cursor: pointer;">Gayatri Sonwane</span></a>
+                </div> 
+            </div>          
+        </div>
+    </div>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <script>
+            AOS.init();
+
+
+            var typed = new Typed('#demo01', {
+                strings: ['<b>I am a</b> Web designer.','<b>I am a</b> Web  Developer'],
+                typeSpeed: 50, loop:true,
+                loopCount: Infinity,
+            }); 
+ 
+         
+            function openCity(cityName) {
+            var i;
+            var x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            document.getElementById(cityName).style.display = "block";  
+            }
+                
+            particlesJS.load('particles-js', 'particles.json', function() {
+            console.log('callback - particles.js config loaded');
+            });
+
+    </script>
+     <script>
+        $('#jq').LineProgressbar({
+             percentage: 90 // 90%
+        });
+        $('#jq1').LineProgressbar({
+             percentage: 80 // 90%
+        });
+        $('#jq2').LineProgressbar({
+             percentage: 60 // 90%
+        });
+        $('#jq3').LineProgressbar({
+             percentage: 50 // 90%
+        });
+    </script>
+    <script>
+            $(function () {
+        $.scrollUp();
+    });
+    </script>
+         
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>
+<link rel="stylesheet" href="protfolio_img/css/style.css">

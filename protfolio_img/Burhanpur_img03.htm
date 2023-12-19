@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta namee="viewport" content="width=device-width, initial-scale=1">
+	<title>Burhanpur diary</title>
+	<link rel="icon1" type="image/x-icon" href="">
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		body{
+			background-color: #ECF0F1;
+		}
+		nav{
+			height: 100px;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			font-family: 'Poppins',sans-serif;
+		}
+		
+		.menu{
+			width: 60%;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.menu a {
+				text-decoration: none;
+				color: black;		  
+		}
+		
+		.img{
+			opacity: 0.8;
+		}
+		.hading{
+			position: absolute;
+			top: 55%;
+			left: 31%;
+			font-size: 70px;
+			color: white;
+			letter-spacing: 5px;
+		}
+		.hadingh1{
+			position: absolute;
+			top: 68%;
+			left: 25%;
+			font-size: 75px;
+			color: white;
+			letter-spacing: 3px;
+		}
+		.pera{
+			font-family: sans-serif;
+			position: absolute;
+			top:90%;
+			left: 38%;
+			color: white;
+			letter-spacing:1px;
+			font-weight: bold;
+			font-size: 20px;
+		}
+		.row{
+			width: 100%;
+			height: 620px;
+			position: relative;
+			top: 50%;
+		}
+		.demo {
+			width: 53%;
+			height: 630px;
+		}
+		.img1{
+			position: absolute;
+			top: 24%;
+			left: 5%;
+		}
+		h2{
+			color: #c08720;
+			position: absolute;
+			top: 18%;
+			left: 55%;
+			font-size: 42px;
+			letter-spacing: 2px;	
+			line-height: 56px;
+		} 
+		.pera1{
+            position: absolute;
+            left: 54%;
+            top: 50%;
+            font-size: 18px;
+            font-family:'Poppins',sans-serif;
+            line-height: 25px;
+		}
+		.btn{
+			padding:16px 25px;
+			position: absolute;
+			left: 66%;
+			top: 88%;
+			cursor: pointer;
+			font-size: 17px;
+			color:  #c08720;
+			border: none;
+			box-shadow: -3px -3px 9px #aaa9a9a2;,
+              3px 3px 7px rgba(147, 149, 151,);
+		}
+		.btn:hover{
+			background-color:  #c08720;
+			color: white;
+		}
+		.Burhanpurdiary3{
+			width: 100%;
+			height: 640px;
+			background-color: #f9f9f9;
+			margin-top: 55px;
+			position: relative;
+		}   
+		.hading2{
+			font-size: 50px;
+			color:#c08720;
+			height: 50px;
+			position: absolute;
+			left: 33%;
+			top: 15%;
+			z-index: 1;
+			letter-spacing: 1px;
+		}
+		.text{
+			font-size: 20px;
+			position: absolute;
+			top: 27%;
+			left: 37%;
+			letter-spacing: 1px;
+		} 
+		.address{
+			position: absolute;
+		}
+		.Dargah-E-Hakimi{
+			position: absolute;
+			left: 37%;
+			top:40%;
+		}
+		.col{
+			position: absolute;
+			left: 66%;
+			top: 40%;
+		}
+		.img234{
+			color:#c08720 ;
+			padding-top: 10px;
+			padding-bottom: 8px;
+		}
+		.col1{
+			position: absolute;
+			left: 8%;
+			top: 40%;
+		}
+		.vp_block{
+			width: 100%;
+			height: 650px;
+			position: relative;
+			
+		}
+		.head{
+			position: absolute;
+			left: 33%;
+			top: 17%;
+		}
+		.figure{
+			position: absolute;
+			left: 20%;
+			top: 30%;
+			font-size: 18px;
+			white-space: 1px;
+		}
+		.wp-blcok{
+			position: relative;
+		}
+		.ig1{
+			position: absolute;
+			left: 10%;
+			top: 39%;	
+			opacity: 0.7;	
+		}
+		.ig2 {
+			position: absolute;
+			left: 30%;
+			top: 39%;
+		}
+		.ig3{
+			position: absolute;
+			left: 50%;
+			top: 39%;
+		}
+		.ig4{
+			position: absolute;
+			left:71%;
+			top: 39%;
+		}
+		.wp-blcok-cover{
+			width: 100%;
+			height: 600px;
+			position: relative;
+		}
+		.address-burhanpur{
+			margin-top: 50px;	
+		}
+		.container{
+			position: relative;
+		}
+		h4{
+			position: absolute;
+			top: 30%;
+			left: 20%;
+			font-size: 30px;
+			color: white;
+		}
+		.SUBSCRIBE-text{
+			position: absolute;
+			top: 43%;
+			left: 38%;
+			font-size: 18px;
+			color: white;
+		}
+		input{
+			position: absolute;
+			top: 57%;
+			left: 10%;
+			width: 66%;
+			padding: 15px;
+		}
+		.btn1{
+			padding:14px 25px;
+			position: absolute;
+			left: 80%;
+			top: 57%;
+			font-size: 14px;
+			color:  #c08720;
+			border: none;
+			box-shadow: -3px -3px 9px #aaa9a9a2;,
+              3px 3px 7px rgba(147, 149, 151,);
+		}
+		.btn1:hover{
+			background-color: ;
+			color: white;
+		}
+		.vp_block-cover{
+			width: 100%;
+			height: 650px;
+			position: relative;
+		}
+		.head1{
+			position: absolute;
+			left: 30%;
+			top: 10%;
+		}
+		.figure1{
+			position: absolute;
+			left: 20%;
+			top: 22%;
+			font-size: 18px;
+		}
+		.grid-container{
+			display: grid;
+			grid-template-columns: 25% 25% 25%;
+			text-align: center;
+			padding-top: 20%;
+			row-gap: 20px;
+			background-color: #f9f9f9;
+			font-size: 17px;
+		}
+		.item1{
+			background-color: white;
+			text-align: center;
+			padding:10px 30px;
+		}
+		.wp-block-group{
+			width: 100%;
+			height: 190px;
+			margin-top: 35px;
+			box-shadow: -3px -3px 9px #aaa9a9a2,
+              3px 3px 7px rgba(147, 149, 151,);
+		
+			position: relative;
+		}
+		.Featured{
+			position: absolute;
+			left: 80px;
+			top: 38%;
+			font-size: 28px;
+			color:  #c08720;
+		}
+		.imgwebp{
+			padding-left: 25%;
+			position: absolute;
+			top: 125%;
+		}
+		.demoimg{
+			padding: 18px;
+		}
+		.lastdemo{
+			background-image: url(img03-free-img.jpg);
+			background-size: cover;
+
+			width: 100%;
+			height: 900px;
+			margin-top: 24%;
+			position: relative;
+		}
+		.lastdemo1{
+			background-color: black;
+			width: 100%;
+			height: 900px;
+			opacity: 0.6;
+		}
+		.digitalhead{
+			color: #c08720 ;
+			position: absolute;
+			top: 16%;
+			left: 40%;
+			font-size: 23px;
+		}
+		.lastdemo img{
+			position: absolute;
+			top: 15%;
+			left: 33%;
+		}
+		.lastdemo p{
+			color: white;
+			position: absolute;
+			top: 69%;
+			left: 30%;
+			font-size: 18px;
+		}
+		.lastdemo pre{
+			position: absolute;
+			top: 80%;
+			left: 35%;
+			color: white;
+			font-size: 20px;
+			color: #c08720 ;
+		}
+		.footer1{
+        	background-color: #3a3a3a;
+        	width: 100%;
+        	height: 80px;
+        	color:#c08720  ;
+        	font-size: 19px;
+        	text-align: center;
+        }
+        footer{
+        	padding: 23px;
+        }
+	</style>
+   	<nav>
+		<div class="logo">
+			<img src="https://i0.wp.com/burhanpurdiary.in/wp-content/uploads/2022/09/bpr.png"width="200px">
+		</div>
+		<div class="menu">
+			<a href="#">Home</a >
+			<a href="Explore Burhanpur.html">Explore Burhanpur^</a>
+			<a href="#">Blogs^</a>
+			<a href="#">List Business</a>
+			<a href="#">About</a>
+			<a href="#">Jobs^</a>
+			<a href="#">Contact</a>
+		</div>
+	</nav>
+	<div>
+		<img class="img" src="burhanpur-scaled.webp"width="100%"height="660px">
+		<h1 class="hading">WELCOME TO</h1>
+		<h1 class="hadingh1 ">BURHANPUR DIARY</h1>
+		<p class="pera">THE DIGITAL GUIDE OF BURHANPUR</p>
+	</div>
+	<!--2part-->
+	<div class="row">
+		<div class="demo">
+		</div>
+		<div class="demo1">
+			<h2>Our Story of Exploring<br>Burhanpur District<br>through the Travel.</h2>
+			<p class="pera1">Welcome to Burhanpur Diary. We are a local digital guide for you.<br>Burhanpurdiary is trying to give you information Burhanpur. People<br> will get to be knowledgeable about our district. We have different<br> types of categories. We are trying to connect the digital presence of<br>our district. Most people are not aware of our city’s historical past,<br> famous places, local foods, economic changes, etc. We are trying to<br> give you information about the district & their local businesses<br>around you, hope it will helpful for you.</p>
+		</div>
+		<button class="btn">About Burhanpurdiary</button>
+	</div>
+	<!--3part-->
+	<div class="Burhanpurdiary3">
+		<h3 class="hading2">Read Our Latest Articles</h3>
+		<p class="text">Articles which helps you to know about Burhanpur</p>
+		<div class="Dargah-E-Hakimi">
+			<figure>
+			<img src="dargah-hakimi.jpg"width="350px"height="280px">
+		</figure>
+		<figcaption class="img234">Dargah-E-Hakimi Burhanpur</figcaption>
+		<figcaption class="fig"> November 16, 2022 </figcaption>
+		</div>
+		<div class="col">
+			<figure>
+			<img src="@burhanpurdiary-1.webp"width="350px"height="280px">
+			</figure>
+			<figcaption class="img234">Tulsi Vivah & Dev Uthani Gyaras 1</figcaption>
+		<figcaption class="fig">November 5, 2022</figcaption> 
+		</div>
+		 <div class="col1">
+	    	<figure><img src="1onebite_hosiyarpur_3.jpeg"width="350px" height="280px"></figure>
+	    	<figcaption class="img234">Protected: OneBite, Burhanpur</figcaption>
+	    	<figcaption class="fig">February 26, 2023</figcaption>
+	    </div>
+	</div>
+	   
+	<!--4part-->
+	<div class="vp_block">
+		<h2 class="head">Featured Categories</h2>
+		<p class="figure">Figure out how to regard the spots you visit. Connect with the culture & nature. Commit yourself to mindful travel.</p>
+		<div class="wp-block">
+			<div><img  class="ig1" src="burhanpur-scaled.webp"width="18%"height="380px"></div>
+			<div> <img class="ig2" src="Burhanpur-jalebi-center.webp"width="18%"height="380px"></div>
+			<div> <img  class="ig3"  src="insta-update-blog-img.webp"width="18%"height="380px"></div>
+			<div> <img class="ig4"  src="industries-infrastucture.webp"width="18%"height="380px"></div>
+		</div>
+	</div>
+	<!--5part-->
+	<div class="wp-block-cover">
+		<div class="container"><img class="address-burhanpur" src="burhanpur-scaled.webp"width="100%"height="380px">
+			<h4>Sign up for the best travel tips and adventures from Burhanpurdiary!</h4>
+			<p class="SUBSCRIBE-text">Subscribe with your email for the latest update or blogs</p>
+			<input type="text" name="" placeholder="Enter Email Address">
+			<button class="btn1">SUBSCRIBE</button>
+		</div>
+	</div>
+	<!--6part-->
+	<div  class="vp_block-cover">
+		<h2 class="head1">Why List Your Business?</h2>
+		<p class="figure1">We help to increase improved client mindfulness, imaginative ideas & thoughts without any charges.</p>
+		<div  class="grid-container" style="padding-left: 16%;">
+			<div class="item1"><img src="technology-1.webp">
+				<figcaption>Trending Technology</figcaption><br>
+				<figcaption>Use Market Trend Technology for step by<br> step Progression of your Business</figcaption>
+			</div>
+			<div class="item1"><img src="store.webp">
+				<figcaption>Make It Goal Make Goal & Achieve It  </figcaption><br>
+				<figcaption>The step is to set Goals & Implement<br>Processes to achieve those Goals</figcaption>
+			</div>
+			<div class="item1"><img src="save.webp">
+				<figcaption>Expansion & Growth Expansion & Growth</figcaption><br>
+				<figcaption>xpand Your Business in a Locality &<br>Grow Your Business</figcaption>
+			</div>
+			<div class="item1"><img src="insignia.webp">
+				<figcaption>Increase Profit</figcaption><br>
+				<figcaption>Analyze Your Business & Give you Tips<br> on how to Increase Your Income Levels</figcaption>
+			</div>
+			<div class="item1"><img src="growth.webp">
+				<figcaption>Enhace credibility</figcaption><br>
+				<figcaption>Promote Your Business in the Local Area<br> to Enhance Your Credibility</figcaption>
+			</div>
+			<div class="item1"><img src="goal.webp">
+				<figcaption>Local Visibility</figcaption><br>
+				<figcaption>Target Your Audience & Create Your<br> Business Identity in the Local Market</figcaption>
+			</div>
+		</div>
+	<!---7part-->
+	<div class="wp-block-group">
+		<h3 class="Featured">As Featured On:</h3>
+	</div>
+	<div class="imgwebp" style="padding-top: 3%;">
+		<img class="demoimg" src="logo-1-1.webp"width="15%"> 
+		<img class="demoimg" src="image_2022.webp"width="16%">
+		<img class="demoimg" src="GCTA.webp"width="16%">
+		<img class="demoimg" src="digital-talked-1.webp"width="12%">
+		<img class="demoimg" src="untitled-design-1.webp"width="16%">
+	</div>
+	</div>
+	<!--lastpart-->
+	<div class="lastdemo">
+
+		<div class="lastdemo1">
+		</div>
+		<h3 class="digitalhead">Digital Guide of Burhanpur</h3>
+		<img src="favicon-transperant.webp"width="35%"height="500px">
+		<p>
+			Welcome to Burhanpur Diary. We are a local digital guide for you. Burhanpurdiary<br> will give a platform for helping for jobs in the local area for employees and<br> employers too. We are trying to connect the digital presence of our district.
+		</p>
+		<pre>Burhanpur, Madhya Pradesh, 450331, INDIA</pre>
+	</div>
+	<!---footer--->
+	<div class="footer1">
+	<footer>Copyright © 2023 BurhanpurDiary</footer>
+	</div>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>                                                

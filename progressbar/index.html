@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar</title>
+    <link href="jquery.lineProgressbar.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="jquery.lineProgressbar.js"></script>
+    <style>
+        .skil{
+            padding: 10px;
+            margin:  auto;
+        }
+        h6{
+            color: white;
+            font-size: 21px;
+        }
+        #jq{
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="skil">
+        <h6>HTML</h6>
+        <div  id="jq"></div>
+        <h6>CSS</h6>
+        <div id="jq1"></div>
+        <h6>JAVASCRIPT</h6>
+        <div id="jq2"></div>
+        <h6>RECAT</h6>
+        <div id="jq3"></div>
+    </div>
+    <script>
+        $('#jq').LineProgressbar({
+             percentage: 90 // 90%
+        });
+        $('#jq1').LineProgressbar({
+             percentage: 80 // 90%
+        });
+        $('#jq2').LineProgressbar({
+             percentage: 60 // 90%
+        });
+        $('#jq3').LineProgressbar({
+             percentage: 50 // 90%
+        });
+    </script>
+</body>
+</html>
